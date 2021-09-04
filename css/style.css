@@ -1,0 +1,85 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #ffffffa6;
+
+    --navbar-height: 72px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--navbar-height);
+
+    padding: 16px;
+
+    font-size: 2.4rem;
+    color: var(--white-color);
+    background-color: grey;
+    width: 100%;
+}
+
+.header a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header .header__control {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.header .header__control li {
+    margin-left: 32px;
+}
+
+/* Sign up page */
+.signup-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.signup-form h2 {
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.signup-form form {
+    display: flex;
+    flex-flow: column;
+}
+
+.signup-form form input,
+.signup-form form button {
+    font-size: 1.8rem;
+    width: 400px;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.signup-form form input {
+}
+
+.signup-form form button {
+    cursor: pointer;
+}
